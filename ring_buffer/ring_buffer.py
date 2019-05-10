@@ -9,8 +9,13 @@ class RingBuffer:
             self.storage[self.current] = item
             self.current += 1
         elif self.current == self.capacity:
-            self.storage.append(item)
-            self.storage.pop(0)
+            self.current = 0
+            self.storage[self.current] = item
+            self.current += 1
 
     def get(self):
-        return self.storage
+        arr = []
+        for i in self.storage:
+            if i is not None:
+                arr.append(i)
+        return arr

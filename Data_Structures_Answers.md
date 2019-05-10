@@ -6,7 +6,7 @@ Add your answers to the questions below.
 
 3. What is the runtime complexity of your ring buffer's `get` method? ANSWER: O(n) where n = self.storage
 
-4. What is the space complexity of your ring buffer's `get` method? ANSWER: O(n) where n = self.storage
+4. What is the space complexity of your ring buffer's `get` method? ANSWER: O(1)
 
 5) What is the runtime complexity of the provided code in `names.py`? ANSWER: O(n^2)
 
